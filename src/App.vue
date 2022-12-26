@@ -35,6 +35,9 @@ export default {
       date: null,
     };
   },
+  mounted() {
+    console.log(this.$store);
+  },
   watch: {
     date() {
       console.log(this.date);

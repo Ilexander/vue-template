@@ -7,16 +7,18 @@ import Knob from "primevue/knob";
 import Calendar from "primevue/calendar";
 import Card from "primevue/card";
 import AutoComplete from "primevue/autocomplete";
+import store from "./store/store";
 import "primevue/resources/themes/lara-light-indigo/theme.css";
 import "primevue/resources/themes/lara-light-indigo/theme.css";
 import "primevue/resources/primevue.min.css";
 import "primeicons/primeicons.css";
-
 import "./assets/main.css";
+
 const app = createApp(App);
 
 app.use(router);
 app.use(PrimeVue);
+app.use(store);
 app.component("Knob", Knob);
 app.component("Calendar", Calendar);
 app.component("Card", Card);
